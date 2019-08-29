@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent">
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity">
+            <EditText android:layout_width="322dp"
+                      android:layout_height="50dp"
+                      android:hint="LOCATION"
+                      android:inputType="textCapCharacters"
+                      android:id="@+id/Locationid"
+                      app:layout_constraintEnd_toEndOf="@+id/cityid"
+                      app:layout_constraintStart_toStartOf="@+id/cityid" android:layout_marginTop="8dp"
+                      app:layout_constraintTop_toBottomOf="@+id/cityid"/>
+            <EditText
+                    android:hint="State"
+                    android:layout_width="324dp"
+                    android:layout_height="45dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/stateid"/>
+            <EditText
+                    android:layout_width="324dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/cityid"
+                    android:hint="City"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/stateid"
+                    app:layout_constraintStart_toStartOf="@+id/stateid"
+                    app:layout_constraintEnd_toEndOf="@+id/stateid"/>
+
+
+            <EditText
+                    android:layout_width="324dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/typeid"
+                    android:hint="Type"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/Locationid"
+                    app:layout_constraintStart_toStartOf="@+id/Locationid"
+                    app:layout_constraintEnd_toEndOf="@+id/Locationid"/>
+
+            <EditText
+                    android:layout_width="324dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/coachingnameid"
+                    android:hint="COACHING NAME"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/typeid"
+                    app:layout_constraintStart_toStartOf="@+id/typeid"
+                    app:layout_constraintEnd_toEndOf="@+id/typeid"/>
+
+
+            <EditText
+                    android:layout_width="324dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/ownerid"
+                    android:hint="Owner Name"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/coachingnameid"
+                    app:layout_constraintStart_toStartOf="@+id/coachingnameid"
+                    app:layout_constraintEnd_toEndOf="@+id/coachingnameid"/>
+            <EditText android:layout_width="322dp"
+                      android:layout_height="50dp"
+                      android:hint="ADDRESSE"
+                      android:inputType="textImeMultiLine"
+                      android:id="@+id/addressid"
+                      android:layout_marginTop="8dp"
+                      app:layout_constraintTop_toBottomOf="@+id/ownerid"
+                      app:layout_constraintStart_toStartOf="@+id/ownerid"
+                      app:layout_constraintEnd_toEndOf="@+id/ownerid"/>
+
+
+            <EditText android:layout_width="322dp"
+                      android:layout_height="50dp"
+                      android:hint="Pincode"
+                      android:inputType="number"
+                      android:id="@+id/pincodeid"
+                      app:layout_constraintEnd_toEndOf="@+id/addressid"
+                      android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/addressid"
+                      app:layout_constraintStart_toStartOf="@+id/addressid"/>
+
+            <EditText android:layout_width="321dp"
+                      android:layout_height="41dp"
+                      android:hint="PRICE"
+                      android:inputType="number"
+                      android:id="@+id/priceid"
+                      android:layout_marginTop="8dp"
+                      app:layout_constraintTop_toBottomOf="@+id/pincodeid"
+                      app:layout_constraintStart_toStartOf="@+id/pincodeid"
+                      app:layout_constraintEnd_toEndOf="@+id/pincodeid"/>
+
+            <EditText android:layout_width="321dp"
+                      android:layout_height="41dp"
+                      android:hint="Fasilities"
+
+                      android:id="@+id/fasilitiesid"
+                      app:layout_constraintTop_toBottomOf="@+id/priceid"
+                      app:layout_constraintEnd_toEndOf="@+id/priceid"
+                      app:layout_constraintStart_toStartOf="@+id/priceid"/>
+
+            <EditText android:layout_width="321dp"
+                      android:layout_height="41dp"
+                      android:hint="Mobile Number"
+                      android:inputType="numberDecimal"
+                      android:id="@+id/mobilenumberid"
+                      app:layout_constraintTop_toBottomOf="@+id/fasilitiesid"
+                      app:layout_constraintEnd_toEndOf="@+id/fasilitiesid"
+                      app:layout_constraintStart_toStartOf="@+id/fasilitiesid"/>
+
+            <Button
+                    android:text="UPLOAD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/banner5_id"
+                    app:layout_constraintStart_toStartOf="@+id/banner5_id"
+                    app:layout_constraintEnd_toEndOf="@+id/banner5_id" app:layout_constraintHorizontal_bias="0.489"
+                    app:layout_constraintVertical_bias="0.015"/>
+            <!--<androidx.recyclerview.widget.RecyclerView-->
+            <!--app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+            <!--android:layout_width="318dp"-->
+            <!--android:layout_height="218dp"-->
+            <!--android:id="@+id/recyclerView_home"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/mobilenumberid"-->
+            <!--app:layout_constraintEnd_toEndOf="@+id/mobilenumberid"-->
+            <!--app:layout_constraintStart_toStartOf="@+id/mobilenumberid">-->
+
+            <!--</androidx.recyclerview.widget.RecyclerView>-->
+            <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Logophoto"
+                    android:id="@+id/logopicid"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/mobilenumberid"
+                    app:layout_constraintEnd_toEndOf="@+id/mobilenumberid"
+                    app:layout_constraintStart_toStartOf="@+id/mobilenumberid"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintHorizontal_bias="0.48"/>
+            <Button
+                    android:text="Banner1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/banner1_id"
+                    app:layout_constraintTop_toBottomOf="@+id/logopicid"
+                    app:layout_constraintStart_toStartOf="@+id/mobilenumberid"
+                    app:layout_constraintEnd_toEndOf="@+id/mobilenumberid"
+                    app:layout_constraintHorizontal_bias="0.0"/>
+            <Button
+                    android:text="Banner2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/banner2_id"
+                    app:layout_constraintTop_toBottomOf="@+id/logopicid"
+                    app:layout_constraintStart_toEndOf="@+id/banner1_id"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginStart="28dp"/>
+            <Button
+                    android:text="Banner3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/banner3_id"
+                    app:layout_constraintTop_toBottomOf="@+id/logopicid"
+                    app:layout_constraintStart_toEndOf="@+id/banner2_id"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginStart="28dp"/>
+            <Button
+                    android:text="Banner4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/banner4_id"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/banner1_id"
+                    app:layout_constraintEnd_toEndOf="@+id/banner1_id"
+                    app:layout_constraintStart_toStartOf="@+id/banner1_id"/>
+            <Button
+                    android:text="Coachng Image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/banner5_id"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/banner2_id"
+                    app:layout_constraintStart_toStartOf="@+id/banner2_id"
+                    app:layout_constraintEnd_toEndOf="@+id/banner2_id"/>
+
+
+            <CheckBox android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/computerchckid"
+                      android:text="Computer"
+                      android:textSize="20dp"
+                      app:layout_constraintTop_toBottomOf="@+id/banner5_id"
+                      android:layout_marginTop="172dp" app:layout_constraintEnd_toEndOf="@+id/button"
+                      app:layout_constraintStart_toStartOf="@+id/button" app:layout_constraintHorizontal_bias="0.484"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView" app:layout_constraintEnd_toEndOf="@+id/computerchckid"
+                    app:layout_constraintStart_toStartOf="@+id/computerchckid"
+                    app:layout_constraintBottom_toTopOf="@+id/computerchckid"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>

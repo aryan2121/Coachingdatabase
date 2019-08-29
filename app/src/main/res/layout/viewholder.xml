@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        xmlns:tools="http://schemas.android.com/tools"
+
+        android:layout_width="match_parent"
+
+        android:padding="2dp"
+
+        android:orientation="horizontal"
+
+        android:layout_height="wrap_content">
+
+<androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineAmbientShadowColor="#0049FF"
+        app:cardBackgroundColor="#5E00D9FF">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+
+            android:layout_width="100dp"
+
+            android:layout_height="100dp"
+
+            android:layout_gravity="center"
+
+            tools:srcCompat="@tools:sample/avatars[0]"
+
+            android:id="@+id/imageView2"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <TextView
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:id="@+id/textView_name"
+                 android:textStyle="bold"/>
+
+        <TextView
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:id="@+id/textView_add"/>
+       <TextView
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:textColor="#1100FF"
+
+        android:id="@+id/textView_fee"/>
+
+
+        <TextView
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:id="@+id/fasilities_id"
+                android:textStyle="bold"/>
+        <TextView
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:id="@+id/mobilenumber_id"
+                android:textStyle="bold"/>
+    </LinearLayout>
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
+
+</LinearLayout>
